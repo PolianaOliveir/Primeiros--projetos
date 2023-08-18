@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--doctype informa ao navegador ou agente de usuário a versao do html que deve renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=" Poliana" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="Keywords" content="html5, tecnologia" />
+  </head>
+  <style>
+    body{
+      font-family: sans-serif;
+
+    }
+
+    label{
+      margin-right: 25px;
+    }
+    label span{
+      display:inline-block;
+      width:60px;
+      height: 30px;
+      background: #ccc;
+      border-radius: 15px;
+    }
+    label span:before{
+      content:'';
+      display:block;
+      background:#eee;
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      margin:5px;
+      transition: all .2s ease-in-out;
+    }
+    
+    label input:checked + span:before{
+      transform: translateX(30px);
+      background: red;
+
+    }
+    input{
+      visibility: hidden;
+      width:1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
+  <h1>Responda o mais rápido que puder:</h1>
+  <label>
+    <input type="checkbox">
+    <span></span>
+    Realize
+  </label>
+  <label>
+    <input type="checkbox">
+    <span></span>
+    Os 
+  </label>
+  <label>
+    <input type="checkbox">
+    <span></span>
+    Seus 
+  </label>
+  <label>
+    <input type="checkbox">
+    <span></span>
+    Sonhos!
+  </label>
+</html>
