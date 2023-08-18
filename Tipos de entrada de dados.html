@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--doctype informa ao navegador ou agente de usuário a versao do html que deve renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=" Poliana" />
+    <meta name="description" content="lista de documentos" />
+    <meta name="Keywords" content="html5, tecnologia" />
+</head>
+<body>
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="#"method="get" class="formlogin">
+    <fieldset>
+       
+        <legend>Dados pessoais</legend>
+
+        <label>Email</label>
+         <input type="email" required >
+        
+         <label>Número de filhos</label>
+         <input type="number" min="0" max="10">
+
+         <label>Data de nascimento</label>
+         <input type="date" min="2023-07-31">
+
+         <p>Sexo</p>
+         <label>
+         <input type="radio" name="sexo" value="M">
+         Masculino
+        </label>
+         <label>Feminino</label>
+         <input type="radio" name="sexo" value="F">
+         <br>
+
+         <label> Estado</label>
+         <select name="estado">
+            <option value="O">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro </option>
+            <option value="MG">Minas Gerais</option>
+         </select>
+         <br>
+        
+         
+         
+
+    </fieldset>
+    <fieldset>
+        <legend>Area de Interesse</legend>
+        <label><input type="checkbox" name="html" value="html">HTML</label>
+        <label><input type="checkbox" name="css" value="css">CSS</label>
+        <label><input type="checkbox" name="Javascript" value="Javascript">Javascript</label>
+    </fieldset>
+    <fieldset>
+     <legend>Mensagem</legend>
+     <textarea name="msg" cols="30" rows="6"></textarea>
+     <textarea name="msg" cols="30" rows="6" maxlength="10">Aqui entra a assinatura para o contrato</textarea>
+     <label><input type="checkbox"> Li e aceito </label>
+    </fieldset>
+    <input type="submit" value="Mandar">
+    <input type="button" value="button">
+    <input type="reset"  value="Reset">
+    <input type="range">
+    <input type="time">
+    <input type="color">
+    <select size="3"multiple>
+        <option 1>opcao1</option>
+        <option 2>opcao2</option>
+        <option 3>opcao3</option>
+    </select>
+</form>
+
+  </body>
+</html>
